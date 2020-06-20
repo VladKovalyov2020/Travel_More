@@ -1,0 +1,114 @@
+@import "./../colors";
+@import "./../mixins";
+@import "./../configs";
+@import "./../../styles/blocks/title";
+
+.home {
+    background-image: url("./../../assets/images/bhromaon-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    &__content-container {
+        min-height: 100vh;
+        padding-top: 272px;
+        letter-spacing: 1.4px;
+        align-items: center;
+    }
+    
+    &__title {
+        font-family: Josefin Sans;
+        margin-bottom: 50px;
+        
+        h1 {            
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 4.8px;            
+        }
+        
+        p {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.18;
+            color: $white;
+            letter-spacing: 6.82px;
+            text-transform: none;
+            text-align: center;
+        }
+    }
+
+    &__search {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 112px;
+           
+        &--place {            
+            min-height: 60px;
+            font-size: 14px;
+            font-weight: 700;
+            font-stretch: normal;             
+            letter-spacing: 2.8px;
+            text-align: center;
+            color: #999999;
+            width: 650px;
+            border: none;
+        }
+        
+        &--btn {
+            width: 150px;
+            padding: 12px 17px 12px 30px;
+            background-color: $blue;
+            border: solid 2px $white;
+            color: $white;
+            font-family: Aleo;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            
+            &:hover {
+                background-color: $blue-4;
+            }
+
+            svg {
+                margin-left: 5px;
+            }
+
+            path {
+                fill: $white;              
+            }       
+        }           
+    }
+
+    &__scroll-block {
+            text-align: center;             
+                  
+        p {
+            color: $white;
+            margin-bottom: 16px;
+            
+            &:hover {
+                color: $grey;
+            }            
+        }
+
+        &--corner {
+            width: 15px;
+            height: 15px;
+            border: 2px solid $white;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+            margin: 0 auto;
+            
+            &:hover {
+                border-color: $grey;
+            }
+        }     
+    }
+}    
+
+    
+
+
+
+

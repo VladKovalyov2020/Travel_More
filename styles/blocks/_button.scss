@@ -1,0 +1,66 @@
+@import "./../colors";
+@import "./../mixins";
+
+.button {
+	@include center;
+	transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+	white-space: nowrap;
+	min-height: 60px;
+    background-color: $blue;
+	text-transform: uppercase;
+	font-family: Aleo;
+	
+	&--size-xs {
+		min-height: 24px;
+		font-size: 14px;
+		font-weight: 700;
+		font-family: "Open Sans";
+		padding: 0 12px;
+		text-transform: uppercase;
+	}
+
+	&--size-sm {
+		min-height: 36px;
+		font-size: 14px;
+		font-weight: 700;
+		font-family: "Open Sans";
+		padding: 0 16px;
+		text-transform: uppercase;
+	}
+
+	&--size-md {
+		min-height: 48px;
+		font-size: 16px;
+		font-weight: 700;
+		font-family: "Open Sans";
+		padding: 0 24px;
+		text-transform: uppercase;
+	}
+
+	&--outlined {
+		border-width: 1px;
+		border-style: solid;
+	}
+
+	&--yellow {
+		&.button--outlined {
+			border-color: $white;
+			background-color: transparent;
+			color: $grey-2;
+
+			&:hover {
+				border-color: $white;
+				background-color: $white;
+				color: $white;
+			}
+		}
+	}
+
+	&--fluid {
+		width: 100%;
+	}
+
+	&--min-content {
+		width: min-content;
+	}
+}

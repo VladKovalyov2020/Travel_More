@@ -1,0 +1,52 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+@import  "./../../styles/blocks/title";
+
+
+.footer {
+    min-height: 268px;
+    background-color: $black;
+    text-align: center;
+    padding-top: 120px;
+
+    &__logo {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3.36px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    p {
+        letter-spacing: 1.2px;
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    &__social {
+        max-width: 163px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-youtube-play,
+        .fa-pinterest {
+            color: $white;
+
+            &:hover {
+                color: $blue-3;
+            }
+        }
+
+        .fa-linkedin {
+            color: $blue-3;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    
+}

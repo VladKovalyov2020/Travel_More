@@ -1,0 +1,108 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+@import  "./../../styles/blocks/title";
+
+.how-it-works {
+   background-color: $brown;
+   padding-top: 46px;
+   padding-bottom: 76px;
+   min-height: 172px;
+
+    &__steps {
+        min-height: 128px;
+        max-width: 975px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding-top: 46px;  
+
+        img {
+            width: 100%;
+            max-width: 777px;
+            left: 95px;
+            top: 10px;
+            position: absolute;
+            
+            @media screen and (max-width: $breakpoint-down-lg) {
+                display: none;
+            }
+        }
+    }
+}
+
+.steps__icons-wrapper {
+    min-height: 126px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+    
+    @media screen and (max-width: $breakpoint-down-xs) {
+        flex-direction: column;
+    }
+   
+    div {
+        text-align: center;
+    }
+                
+    svg {
+        margin: 20px;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+        background-color: $brown;
+        z-index: 1;
+        position: relative;
+    }
+    
+    &--search path {
+        fill: $white;
+        z-index: 5;
+    } 
+    
+    p {
+        font-size: 36px;
+        color: $grey-1;
+        font-family: Aleo;
+
+        @media screen and (max-width: $breakpoint-down-lg) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.icons-wrapper__icon--search {
+    
+    path {
+        fill: $blue;
+    }
+}
+ 
+.icons-wrapper__icon--select {
+
+    path {
+        fill: $red;
+    }
+}
+
+
+.icons-wrapper__icon--book {
+
+    path {
+        fill: $blue-2;
+    }
+}
+
+            
+                   
+           
+         
+
+   
+       
+
+
+
+    

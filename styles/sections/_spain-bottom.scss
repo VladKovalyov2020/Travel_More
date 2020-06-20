@@ -1,0 +1,64 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+@import  "./../../styles/blocks/title";
+
+
+.spain-bottom {
+    background-image: url("./../../assets/images/spain_2_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 224px;
+    padding-bottom: 100px;
+    
+    &__container {
+        min-height: 700px;
+        display: flex;            
+    }    
+
+    .spain__block  {
+        min-height: 371px;
+        max-width: 540px;
+        background-color: $black;
+        opacity: 0.9;
+        padding: 50px 32px 50px;
+        margin-left: auto;
+
+        .block__title {
+            
+            p {
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                margin-bottom: 32px;
+                font-family: JosefinSans;
+                text-transform: uppercase;
+                line-height: 1.2em;
+            }            
+        }
+
+        p {
+            color: #e8e8e8;
+            font-weight: 400;
+            line-height: 1.63em;
+            margin-bottom: 48px;
+        }
+
+        .block__button {
+            width: 225px;
+            text-align: center;
+            white-space: normal;
+
+            &:hover {
+                background-color: $blue-4;
+            }
+                                
+            a {
+                color: $white; 
+                text-decoration: none;                
+            }     
+        }
+    }
+}
+       
+    

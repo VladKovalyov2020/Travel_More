@@ -1,0 +1,21 @@
+@import "./colors";
+
+body {
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: $white;
+	overflow-x: hidden;
+	font-family: 'Aleo', serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}

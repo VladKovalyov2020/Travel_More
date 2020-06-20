@@ -1,0 +1,108 @@
+@import "./../colors";
+@import "./../configs";
+
+header {    
+    background-color: $blue;
+}   
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: calc(100vh - 80px);
+
+    &__content-container {
+        
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $white;
+        min-height: 80px;
+    }
+
+    &__logo {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    
+    &__navbar-item {
+        margin-left: auto;
+        min-width: 590px;   
+        font-size: 14px; 
+        text-transform: uppercase;
+        
+        a {
+            margin-right: 40px;
+            color: $white;
+            text-decoration: none;
+
+            &:last-child {
+                margin-right: 0;               
+            }
+
+            &:hover {
+                color: $grey-1;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-down-md) {
+            display: none;
+        }
+
+        
+    } 
+
+    /* hamburger button */
+
+    &__menu-btn {
+	    background-color: transparent;
+	    position: relative;
+	    display: none;
+	    outline: none;
+	    padding: 0;
+	    cursor: pointer;
+	    border: 0;
+	    height: 24px;
+        width: 24px;
+        margin-right: 20px;
+        
+        p {
+            background-color: $white;
+            transition: 0.25s ease;
+            transform: rotate(0deg);
+            position: absolute;
+            display: block;
+            opacity: 1;
+            height: 3px;
+            width: 100%;
+        
+           
+            &:nth-of-type(1) {
+                left: 0;
+                top: 0;
+            }
+
+            &:nth-of-type(2) {
+                left: 0;
+                top: 10px;
+           }
+
+            &:nth-of-type(3) {
+                left: 0;
+                top: 20px;
+            }
+
+            &:hover {
+                background-color: $grey;
+            } 
+          
+        }
+        
+        @media screen and (max-width: $breakpoint-down-md) {
+            display: block;
+        }
+    }      
+ }
+
+

@@ -1,0 +1,82 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+@import  "./../../styles/blocks/title";
+
+
+.tourist-say {
+    background-image: url("./../../assets/images/what_our_tourist_say_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 731px; 
+    padding-top: 120px;
+    padding-bottom: 200px;
+    opacity: 0.5;
+
+    
+    &__container {
+         text-align: center;
+
+       .tourist-say__title {
+            margin-bottom: 94px;
+            
+            h2 {
+                line-height: 1.2em;
+            }
+       }
+
+       .tourist-say__review {
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+            
+            @media screen and (max-width: $breakpoint-down-lg) {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            @media screen and (max-width: $breakpoint-down-xs) {
+                width: 380px;
+                
+            }
+
+           .review__picture-wrapper {
+               width: 40%;
+               
+                img {
+                    max-width: 445px;
+                    width: 100%;    
+               }
+           }
+
+            .review__review-box {
+               width: 60%;
+               padding: 50px 48px 48px 60px;
+               text-align: left;
+               background-color: $brown;
+               line-height: 1.63em;
+
+               @media screen and (max-width: $breakpoint-down-lg) {
+                margin-top: 20px;
+            }
+            
+               .review-box__autor {
+                font-style: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $grey-1;
+                }
+
+                p {
+                   margin-top: 32px; 
+                   
+                   span {
+                    font-size: 36px;
+                    color: $blue-3;
+                   }
+                }      
+            }
+       }
+    }
+} 
+
+     
